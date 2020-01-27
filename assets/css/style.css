@@ -81,7 +81,7 @@ li a:active {
     margin-top: 150px;
     border-radius: 2.5%;
     /* margin-bottom: 100px; */
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 #clear {
     clear: both;
@@ -100,6 +100,7 @@ hr {
     height: 200px;
     float: left;
     padding: 7px 20px 5px 0;
+    clear: both;
 }
 p {
     line-height: 2em;
@@ -117,12 +118,13 @@ p {
     border-top: 10px solid #4aaaa5;
 }
 footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     color: white;
     bottom: 0;
     clear: both;
+    text-align: center;
 }
 .temporary {
     background-color: #777777;
@@ -131,5 +133,16 @@ footer {
     bottom: 0;
     clear: both;
     margin-bottom: 0;
+    position: absolute;
+}
+.covertext {
+    position: relative;
+    background-color: #4aaaa5;
+    width: 280px;
+    height: 70px;
+    text-decoration-color: white;
+    text-align: center;
+}
+.absolute {
     position: absolute;
 }
