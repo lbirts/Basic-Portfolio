@@ -1,0 +1,135 @@
+* {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    /* position: relative; */
+    min-height: 100%;
+    margin-bottom: -48px;
+}
+.mainheader {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    height: 6em;
+    /* margin-top: 0;
+    padding: 0; */
+    top: 0;
+    left: 0; 
+    width: 100%;
+    position: absolute;
+    /* margin: auto;
+    box-align: center; */
+} 
+.page {
+    width: 960px;
+    margin: auto;
+}
+h1 {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: 225px;
+    padding: 25.5px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.rightnav {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 50px;
+    /* display: inline; */
+    /* position: fixed; */
+}
+li {
+    /* display: inline; */
+    text-align: center;
+    border-right: 1px solid #cccccc;
+    float: left;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    padding: 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #777777;
+    color: white;
+}
+li a:active {
+    background-color: #4aaaa5;
+    color: white;
+} 
+.mainbody {
+    clear: both;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px 30px 48px 30px;
+    margin-top: 150px;
+    border-radius: 2.5%;
+    /* margin-bottom: 100px; */
+    padding-bottom: 48px;
+}
+#clear {
+    clear: both;
+}
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 27px;
+}
+hr {
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+.smallerimg {
+    width: 280px;
+    height: 200px;
+    float: left;
+    padding: 7px 20px 5px 0;
+}
+p {
+    line-height: 2em;
+    /* overflow: hidden; */
+}
+.bigfooter {
+    background-color: #777777;
+    width: 100%;
+    height: 38px;
+    color: white;
+    text-align: center;
+    padding-top: 0%;
+    bottom: 0;
+    clear: both;
+    border-top: 10px solid #4aaaa5;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    color: white;
+    bottom: 0;
+    clear: both;
+}
+.temporary {
+    background-color: #777777;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    clear: both;
+    margin-bottom: 0;
+    position: absolute;
+}
