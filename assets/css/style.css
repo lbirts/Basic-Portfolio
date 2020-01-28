@@ -1,95 +1,110 @@
 * {
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #777777;  
 }
 html {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    min-height: 100%;
 }
 body {
+    line-height: 34px;
     background: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0 0 93px;
 }
 .container {
-    /* position: relative; */
-    min-height: 100%;
-    margin-bottom: -48px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
 }
+h1 {
+    font-weight: 700;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    line-height: 49px;
+    text-decoration: none;
+}
+h3, p {
+    margin-bottom: 20px;
+    line-height: 2em;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+/* header */
 .mainheader {
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
-    height: 6em;
-    /* margin-top: 0;
-    padding: 0; */
-    top: 0;
-    left: 0; 
+    margin: 0 0 30px;
     width: 100%;
-    position: absolute;
-    /* margin: auto;
-    box-align: center; */
-} 
-.page {
-    width: 960px;
-    margin: auto;
+    position: fixed;
+    /* overflow: auto; */
+    z-index: 99;
+    top: 0;
+    /* height: 6em;
+    padding: 0;
+    left: 0; */
 }
-h1 {
+#header {
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     width: 225px;
-    padding: 25.5px;
-    margin-top: 10px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
     float: left;
     color: white;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 .rightnav {
     float: right;
     list-style-type: none;
-    margin: 0;
-    padding-top: 50px;
-    /* display: inline; */
-    /* position: fixed; */
+    margin-top: 45px;
 }
 li {
-    /* display: inline; */
-    text-align: center;
     border-right: 1px solid #cccccc;
     float: left;
 }
 li:last-child {
-    border-right: none;
+    border-right: 0 none;
 }
 li a {
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
     text-decoration: none;
 }
 li a:hover {
     background-color: #777777;
     color: white;
+    font-weight: bold;
 }
 li a:active {
     background-color: #4aaaa5;
     color: white;
-} 
+}
+ /* Content  */
 .mainbody {
     clear: both;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     padding: 10px 30px 48px 30px;
-    margin-top: 150px;
+    width: 100%;
+    max-width: 960px;
     border-radius: 2.5%;
-    /* margin-bottom: 100px; */
-    margin-bottom: 48px;
+    margin-top: 130px;
 }
-#clear {
-    clear: both;
+#maincontain {
+    overflow: hidden;
 }
-h2 {
+#title {
     color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 27px;
+    margin: 10px 0 15px 0;
 }
 hr {
     border: 1px solid #cccccc;
@@ -97,43 +112,77 @@ hr {
 }
 .smallerimg {
     width: 280px;
-    height: 200px;
+    height: auto;
     float: left;
-    padding: 7px 20px 5px 0;
-    clear: both;
+    margin: 10px 25px 0 0;
 }
-p {
-    line-height: 2em;
-    /* overflow: hidden; */
+/* Portfolio */
+.icon {
+    width: 280px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 28px 0 25px 34px;
 }
-.bigfooter {
-    background-color: #777777;
+.icon img {
     width: 100%;
-    height: 38px;
-    color: white;
-    text-align: center;
-    padding-top: 0%;
-    bottom: 0;
-    clear: both;
-    border-top: 10px solid #4aaaa5;
+    /* opacity: .8; */
 }
-footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    color: white;
-    bottom: 0;
-    clear: both;
-    text-align: center;
-}
-.temporary {
-    background-color: #777777;
+.icon h3 {
+    border-bottom: 0;
+    background-color: #4aaaa5;
     color: white;
     text-align: center;
-    bottom: 0;
-    clear: both;
-    margin-bottom: 0;
     position: absolute;
+    font-size: 27px;
+    width: 100%;
+    bottom: 0.4em;
+    margin-bottom: 0;
+    opacity: 0.9;
+    line-height: 45px;
+}
+#etch {
+    height: 200px;
+}
+/* Contact */
+.contact {
+    margin-bottom: 15px;
+}
+label, input[type=text], input[type=email], input[type=message] {
+    width: 100%;
+    display: block;
+}
+input[type=text], input[type=email], input[type=message] {
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+#largerinput {
+    height: 300px;
+}
+input[type=submit] {
+    background-color: #4aaaa5;
+    border: 0 none;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+/* Footer */
+#footer {
+    /* height: 85px; */
+    background-color: #777777;
+    color: white;
+    padding: 20px 0;
+    border-top: 8px solid #4aaaa5;
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+    clear: both;
+    text-align: center;
 }
 .covertext {
     position: relative;
@@ -143,6 +192,30 @@ footer {
     text-decoration-color: white;
     text-align: center;
 }
-.absolute {
-    position: absolute;
+@media (max-width: 595px) {
+    .mainheader {
+        height: 230px;
+    }
+    li {
+        border-right: 0 none;
+        width: 100%;
+    }
+    li a {
+        margin: 35px 0 35px 0;
+    }
+    #header {
+        margin: 0 auto;
+        font-size: 15px;
+        width: 40%;
+        height: 30%;
+        text-align: center;
+        font-weight: 600;
+        display: table;
+    }
+    .rightnav {
+        clear: both;
+    }
+    .mainbody {
+        margin-top: 250px;
+    }
 }
