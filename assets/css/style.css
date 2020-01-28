@@ -127,6 +127,7 @@ hr {
 .icon img {
     width: 100%;
     /* opacity: .8; */
+    height: 200px;
 }
 .icon h3 {
     border-bottom: 0;
@@ -140,9 +141,6 @@ hr {
     margin-bottom: 0;
     opacity: 0.9;
     line-height: 45px;
-}
-#etch {
-    height: 200px;
 }
 /* Contact */
 .contact {
