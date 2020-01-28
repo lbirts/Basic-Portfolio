@@ -58,7 +58,7 @@ p:last-child {
     text-align: center;
     float: left;
     color: white;
-    font-weight: 700;
+    /* font-weight: 600; */
     font-size: 30px;
     text-decoration: none;
     margin-top: 10px;
